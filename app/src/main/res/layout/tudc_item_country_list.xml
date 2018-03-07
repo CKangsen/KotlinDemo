@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <!--字母分类文字-->
+    <TextView
+        android:id="@+id/country_sort"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:background="@color/color_EFEFEF"
+        android:textSize="12sp"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:textColor="@color/color_8c8c8c"
+        android:paddingRight="4.0dip" />
+    <!--国家行-->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="52dp"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="20dp" >
+
+        <TextView
+            android:id="@+id/country_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:textColor="@color/color_404040"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/country_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:textColor="@color/color_8c8c8c"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+</LinearLayout>

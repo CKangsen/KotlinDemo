@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="icloud_8dp">8dp</dimen>
+    <dimen name="icloud_9dp">9dp</dimen>
+    <dimen name="icloud_12dp">12dp</dimen>
+    <dimen name="icloud_13dp">13dp</dimen>
+    <dimen name="icloud_14dp">14dp</dimen>
+    <dimen name="icloud_16dp">16dp</dimen>
+    <dimen name="icloud_18dp">18dp</dimen>
+    <dimen name="icloud_20dp">20dp</dimen>
+    <dimen name="icloud_24dp">24dp</dimen>
+    <dimen name="icloud_30dp">30dp</dimen>
+    <dimen name="icloud_45dp">45dp</dimen>
+    <dimen name="icloud_88dp">88dp</dimen>
+    <dimen name="icloud_56dp">56dp</dimen>
+    <dimen name="icloud_59dp">59dp</dimen>
+    <dimen name="icloud_84dp">88dp</dimen>
+    <dimen name="icloud_140dp">140dp</dimen>
+    <dimen name="icloud_328dp">328dp</dimen>
+
+    <dimen name="title_back_margin">8dp</dimen>
+    <dimen name="titlebar_height">56dp</dimen>
+    <dimen name="title_font_size_18sp">18sp</dimen>
+    <dimen name="font_size_16sp">16sp</dimen>
+    <dimen name="font_size_14sp">14sp</dimen>
+    <dimen name="manager_title_name_margin">25dp</dimen>
+    <dimen name="manager_line_margin_right_20">20dp</dimen>
+    <dimen name="manager_toggle_width">40dp</dimen>
+    <dimen name="manager_toggle_height">45dp</dimen>
+    <dimen name="manager_line_margin_top_10dp">10dp</dimen>
+</resources>

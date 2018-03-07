@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center|center_vertical"
+    android:background="@color/color_black_tran90">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginEnd="40dp"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/icloud_24dp"
+        android:layout_marginLeft="@dimen/icloud_24dp"
+        android:layout_marginStart="@dimen/icloud_24dp"
+        android:layout_marginRight="@dimen/icloud_24dp"
+        android:layout_marginEnd="@dimen/icloud_24dp"
+        android:layout_marginBottom="@dimen/icloud_12dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:tag="beta_title"
+            android:textSize="@dimen/icloud_20dp"
+            android:textColor="@color/color_333333"
+            android:text="TextView"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:tag="beta_upgrade_info"
+            android:textSize="@dimen/icloud_14dp"
+            android:textColor="@color/color_333333"
+            android:text="TextView"
+            android:layout_marginTop="@dimen/icloud_16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/icloud_14dp"
+            android:textColor="@color/color_333333"
+            android:text="@string/upgrade_directions"
+            android:layout_marginTop="@dimen/icloud_8dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:tag="beta_upgrade_feature"
+            android:textSize="@dimen/icloud_14dp"
+            android:textColor="@color/color_333333"
+            android:text="TextView"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/icloud_16dp"
+        android:layout_marginLeft="@dimen/icloud_16dp"
+        android:layout_marginStart="@dimen/icloud_16dp"
+        android:layout_marginRight="@dimen/icloud_16dp"
+        android:layout_marginEnd="@dimen/icloud_16dp"
+        android:layout_marginBottom="@dimen/icloud_16dp"
+        android:gravity="end">
+
+        <Button
+            android:tag="beta_cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/icloud_16dp"
+            android:textColor="@color/icloud_999999"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:paddingLeft="@dimen/icloud_16dp"
+            android:paddingStart="@dimen/icloud_16dp"
+            android:paddingRight="@dimen/icloud_16dp"
+            android:paddingEnd="@dimen/icloud_16dp"
+            android:background="@drawable/icloud_rectangle_mask_selector"
+            android:text="@string/cancel" />
+
+        <Button
+            android:tag="beta_confirm_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/icloud_16dp"
+            android:textColor="@color/icloud_1aaa70"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:paddingLeft="@dimen/icloud_16dp"
+            android:paddingStart="@dimen/icloud_16dp"
+            android:paddingRight="@dimen/icloud_16dp"
+            android:paddingEnd="@dimen/icloud_16dp"
+            android:background="@drawable/icloud_rectangle_mask_selector"
+            android:text="@string/confirm" />
+    </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

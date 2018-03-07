@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:background="@color/color_FFFFFF">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@drawable/cloud_bg_title">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/reg_back_demo"
+            android:src="@drawable/cloud_ic_title_back"
+            android:layout_marginLeft="@dimen/title_back_margin"
+            android:layout_marginStart="@dimen/title_back_margin"/>
+    </FrameLayout>
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/tudc_pic_default"
+        android:id="@+id/img_head_demo"
+        android:layout_marginTop="@dimen/padding_24dp" />
+    <TextView
+        android:id="@+id/confirm_phone_number_demo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/padding_5dp"
+        android:textSize="@dimen/textsize_18dp"
+        android:textColor="@color/color_333333"
+        android:text="13800138000" />
+    <TextView
+        android:id="@+id/confirm_tip_demo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/padding_12dp"
+        android:layout_marginLeft="@dimen/icloud_16dp"
+        android:layout_marginStart="@dimen/icloud_16dp"
+        android:layout_marginRight="@dimen/icloud_16dp"
+        android:layout_marginEnd="@dimen/icloud_16dp"
+        android:textSize="@dimen/textsize_16dp"
+        android:textColor="@color/color_999999"
+        android:text="@string/confirm_tip_text" />
+
+    <!-- 切换手机号按钮 -->
+    <Button
+        android:text="@string/switch_phone_number"
+        android:textColor="@color/color_FFFFFF"
+        android:textSize="@dimen/padding_16dp"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_fragment_input_box_height"
+        android:id="@+id/switch_number_btn_demo"
+        android:background="@drawable/permission_btn_selector"
+        android:layout_marginLeft="@dimen/icloud_16dp"
+        android:layout_marginStart="@dimen/icloud_16dp"
+        android:layout_marginRight="@dimen/icloud_16dp"
+        android:layout_marginEnd="@dimen/icloud_16dp"
+        android:layout_marginTop="@dimen/padding_32dp" />
+
+    <!-- 登录按钮 -->
+    <Button
+        android:text="@string/login"
+        android:textColor="@color/color_FFFFFF"
+        android:textSize="@dimen/padding_16dp"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_fragment_input_box_height"
+        android:id="@+id/login_btn_demo"
+        android:layout_marginLeft="@dimen/icloud_16dp"
+        android:layout_marginStart="@dimen/icloud_16dp"
+        android:layout_marginRight="@dimen/icloud_16dp"
+        android:layout_marginEnd="@dimen/icloud_16dp"
+        android:background="@drawable/permission_btn_selector"
+        android:layout_marginTop="@dimen/padding_16dp" />
+
+</LinearLayout>

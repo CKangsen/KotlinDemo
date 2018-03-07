@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@color/icloud_ffffff">
+
+    <!--标题-->
+    <RelativeLayout
+        android:id="@+id/text_title_demo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/cloud_bg_title">
+
+
+        <ImageView
+            android:id="@+id/sms_back_button_demo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/title_back_margin"
+            android:layout_marginStart="@dimen/title_back_margin"
+            android:background="@drawable/cloud_ic_title_back"
+            android:clickable="true"
+            android:focusable="true"
+            android:scaleType="fitXY" />
+
+
+
+        <!--<TextView-->
+            <!--android:id="@+id/edit_title_text_demo"-->
+            <!--style="@style/title_textset"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginLeft="@dimen/title_back_margin"-->
+            <!--android:layout_toRightOf="@id/sms_back_button_demo"-->
+            <!--android:text="@string/inputphone"-->
+            <!--android:textColor="@color/icloud_ffffff" />-->
+
+       <!-- <View
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/sms_next_demo"
+            android:background="@color/color_333333" />-->
+
+       <!-- <TextView
+            android:id="@+id/sms_next_demo"
+            android:layout_width="62dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/next"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:textColor="@color/color_333333"
+            />-->
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/llphonecountry_demo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="72dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/llSetuppassword"
+            android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/edit_title_text_demo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/title_back_margin"
+                android:layout_marginStart="@dimen/title_back_margin"
+                android:layout_toRightOf="@id/sms_back_button_demo"
+                android:layout_toEndOf="@id/sms_back_button_demo"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/icloud_24dp"
+                android:text="@string/set_up_phone_number" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llCountry_demo"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="@dimen/icloud_30dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tvCountryTitle_demo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12sp"
+                android:layout_marginStart="12sp"
+                android:text="@string/phone_register_country"
+                android:textColor="@color/color_999999"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvCountry_demo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="Algeria"
+                android:textColor="@color/icloud_1aaa70"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/color_e3e5e9"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="14dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tvCountryCode_demo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12sp"
+                android:layout_marginStart="12sp"
+                android:text="+213"
+                android:textColor="@color/color_333333"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/tvphoneNumber_demo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_weight="1"
+                android:autoLink="none"
+                android:background="@android:color/transparent"
+                android:gravity="left"
+                android:hint="@string/phone_account_input_box_hint"
+                android:inputType="number"
+                android:maxLength="20"
+                android:text="18665336779"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/textsize_12dp" />
+
+            <ImageView
+                android:id="@+id/phone_cancel_demo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:layout_marginEnd="8dp"
+                android:padding="6dp"
+                android:src="@drawable/cloud_ic_input_cancel" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/color_e3e5e9"></View>
+    </LinearLayout>
+
+    <!--<Button-->
+        <!--android:layout_width="80dp"-->
+        <!--android:layout_height="36dp"-->
+        <!--android:id="@+id/sms_next_demo"-->
+        <!--android:layout_gravity="right|center_vertical"-->
+        <!--android:layout_marginRight="16dp"-->
+        <!--android:text="@string/register_next"-->
+        <!--android:textColor="@color/icloud_ffffff"-->
+        <!--android:textSize="16dp"-->
+        <!--android:layout_marginTop="@dimen/icloud_16dp"-->
+        <!--android:textAllCaps="false"-->
+        <!--android:enabled="false"-->
+        <!--android:background="@drawable/btn_circle_green_selector"/>-->
+
+    <!--下一步按钮-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="right|bottom"
+        android:id="@+id/fl_next"
+        android:background="@drawable/cloud_bg_bottom">
+        <Button
+            android:layout_width="wrap_content"
+            android:minWidth="80dp"
+            android:maxWidth="100dp"
+            android:layout_height="36dp"
+            android:id="@+id/sms_next_demo"
+            android:layout_gravity="end|right|center_vertical"
+            android:layout_marginRight="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/next"
+            android:textColor="@color/icloud_ffffff"
+            android:textSize="16dp"
+            style="?android:attr/borderlessButtonStyle"
+            android:textAllCaps="false"
+            android:enabled="false"
+            android:background="@drawable/btn_circle_green_selector"/>
+    </FrameLayout>
+
+</FrameLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@color/icloud_ffffff">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/icloud_56dp"
+        android:orientation="horizontal"
+        android:background="@drawable/cloud_bg_title"
+        android:layout_marginBottom="16dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/permission_back"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/icloud_image_oval_mask_selector"
+                android:background="@drawable/cloud_ic_title_back"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"/>
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/open_permission"
+                android:textColor="@color/icloud_ffffff"
+                android:textSize="@dimen/icloud_18dp"
+                />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/icloud_24dp"
+        android:background="@drawable/cloud_ic_default_lock" />
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/icloud_16dp"
+        android:paddingLeft="@dimen/icloud_16dp"
+        android:paddingEnd="@dimen/icloud_16dp"
+        android:paddingRight="@dimen/icloud_16dp"
+        android:paddingTop="@dimen/icloud_20dp"
+        android:paddingBottom="@dimen/icloud_30dp"
+        android:text="@string/info_permission_activity"
+        android:textSize="@dimen/icloud_16dp"
+        android:textColor="@color/icloud_333333"
+        android:gravity="center_vertical"/>
+
+    <Button
+        android:id="@+id/goto_setting_btn"
+        android:layout_width="@dimen/icloud_328dp"
+        android:layout_height="@dimen/icloud_45dp"
+        android:paddingStart="@dimen/icloud_16dp"
+        android:paddingLeft="@dimen/icloud_16dp"
+        android:paddingEnd="@dimen/icloud_16dp"
+        android:paddingRight="@dimen/icloud_16dp"
+        android:text="@string/info_permission_btn"
+        android:textSize="@dimen/icloud_18dp"
+        android:textColor="@color/icloud_ffffff"
+        android:background="@drawable/permission_btn_selector" />
+</LinearLayout>

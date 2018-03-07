@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@drawable/cloud_bg_title"
+        >
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/title_back_margin"
+            android:layout_marginStart="@dimen/title_back_margin"
+            android:layout_marginRight="@dimen/title_back_margin"
+            android:layout_marginEnd="@dimen/title_back_margin"
+            android:background="@drawable/cloud_ic_title_back"
+            android:src="@drawable/icloud_image_oval_mask_selector"
+            />
+        <TextView
+            android:id="@+id/custom_login_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             style="@style/title_textset"
+            android:layout_toRightOf="@+id/iv_back"
+            android:layout_toEndOf="@+id/iv_back"
+            android:text="@string/app_name"
+            android:layout_centerVertical="true"  />
+    </RelativeLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_below="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/padding_16dp"
+        android:paddingStart="@dimen/padding_16dp"
+        android:paddingLeft="@dimen/padding_16dp"
+        android:paddingEnd="@dimen/padding_16dp"
+        android:paddingRight="@dimen/padding_16dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/custom_login_way"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/icloud_16dp"
+                android:text="@string/transsionid_phone_login"
+                android:visibility="gone"
+                android:textColor="@color/color_999999" />
+
+            <!-- 手机号输入框 -->
+            <LinearLayout
+                android:id="@+id/custom_phone_input_layout"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/login_fragment_input_box_height"
+                android:layout_marginTop="@dimen/login_fragment_login_account_layout_margin_top"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:id="@+id/custom_country_code_layout"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="30dp"
+                    android:layout_marginStart="@dimen/login_fragment_text_padding_start"
+                    android:layout_marginLeft="@dimen/login_fragment_text_padding_start"
+                    android:paddingTop="@dimen/padding_5dp"
+                    android:paddingBottom="@dimen/padding_5dp"
+                    android:layout_weight="1"
+                    android:background="?android:attr/selectableItemBackground">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/custom_phone_country_title"
+                        android:text="DZ  "
+                        android:textColor="@color/icloud_1aaa70"
+                        android:textSize="@dimen/textsize_16dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/custom_phone_country_code"
+                        android:text="+213"
+                        android:textColor="@color/icloud_1aaa70"
+                        android:textSize="@dimen/textsize_16dp" />
+                </LinearLayout>
+
+                <com.afmobi.tudcsdk.login.widget.UserIdCustomPasteEditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="20"
+                    android:hint="@string/phone_account_input_box_hint"
+                    android:textColorHint="@color/color_CCCCCC"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/textsize_12dp"
+                    android:id="@+id/custom_login_phone_number"
+                    android:layout_weight="10"
+                    android:layout_marginLeft="@dimen/login_fragment_account_text_padding"
+                    android:layout_marginStart="@dimen/login_fragment_account_text_padding"
+                    android:layout_marginEnd="@dimen/login_fragment_text_padding_end"
+                    android:layout_marginRight="@dimen/login_fragment_text_padding_end"
+                    android:background="@null"
+                    android:autoLink="none" />
+            </LinearLayout>
+
+
+            <!-- 邮箱输入框 -->
+            <LinearLayout
+                android:id="@+id/custom_email_input_layout"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/login_fragment_input_box_height"
+                android:gravity="center_vertical">
+
+                <com.afmobi.tudcsdk.login.widget.UserIdCustomPasteEditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/custom_login_email"
+                    android:maxLength="50"
+                    android:hint="@string/email_account_input_box_hint"
+                    android:textColorHint="@color/color_CCCCCC"
+                    android:textColor="@color/color_333333"
+                    android:layout_marginStart="@dimen/login_fragment_text_padding_start"
+                    android:layout_marginLeft="@dimen/login_fragment_text_padding_start"
+                    android:textSize="@dimen/textsize_12dp"
+                    android:background="@null"
+                    android:autoLink="none"
+                    android:inputType="textVisiblePassword"
+                    style="?android:attr/text"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/color_e3e5e9"></View>
+
+            <!-- 密码输入框 -->
+            <LinearLayout
+                android:id="@+id/custom_password_input_layout"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/login_fragment_input_box_height"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/custom_clear_pwd_btn"
+                    android:src="@drawable/cloud_ic_input_cancel"
+                    android:layout_marginEnd="@dimen/login_fragment_input_cancel_width"
+                    android:layout_marginRight="@dimen/login_fragment_input_cancel_width"
+                    android:padding="6dp"
+                    android:visibility="gone"/>
+
+                <com.afmobi.tudcsdk.login.widget.PasswordCustomPasteEditText
+                    android:id="@+id/custom_password"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/login_fragment_text_padding_start"
+                    android:layout_weight="10"
+                    android:textSize="@dimen/textsize_12dp"
+                    android:autoLink="none"
+                    android:background="@null"
+                    android:hint="@string/password_input_box_hint"
+                    android:inputType="textPassword"
+                    android:textColorHint="@color/color_CCCCCC" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/color_e3e5e9"></View>
+
+            <!-- 验证码输入框 -->
+            <LinearLayout
+                android:id="@+id/custom_verify_code_input_layout"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/login_fragment_input_box_height"
+
+                android:gravity="center_vertical">
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:hint="@string/verify_code_input_box_hint"
+                    android:textColorHint="@color/color_CCCCCC"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/textsize_12dp"
+                    android:id="@+id/custom_verify_code"
+                    android:layout_marginLeft="@dimen/login_fragment_text_padding_start"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:autoLink="none" />
+
+                <TextView
+                    android:text="@string/get_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/icloud_30dp"
+                    android:id="@+id/custom_reacquire_verify_code"
+                    android:layout_gravity="center_vertical|end"
+                    android:layout_marginEnd="@dimen/login_fragment_text_padding_start"
+                    android:layout_marginStart="@dimen/login_fragment_text_padding_start"
+                    android:paddingLeft="@dimen/login_fragment_account_text_padding"
+                    android:paddingRight="@dimen/login_fragment_account_text_padding"
+                    android:gravity="center"
+                    android:textSize="@dimen/textsize_14dp"
+                    android:background="@drawable/btn_get_code"
+                    android:textColor="@color/icloud_ffffff"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/color_e3e5e9"></View>
+
+            <!-- 登录按钮 -->
+            <Button
+                android:text="@string/login"
+                android:textColor="@color/color_FFFFFF"
+                android:textSize="@dimen/padding_16dp"
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/login_fragment_input_box_height"
+                android:id="@+id/custom_login_btn"
+                android:background="@drawable/permission_btn_selector"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_marginTop="@dimen/login_fragment_login_btn_layout_margin_top" />
+
+            <!-- 注册 -->
+            <TextView
+                android:text="@string/register"
+                android:textColor="@color/icloud_1aaa70"
+                android:textSize="@dimen/textsize_14dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/custom_register"
+                android:layout_marginTop="@dimen/login_fragment_register_btn_layout_margin_top"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="?android:attr/selectableItemBackground"
+                android:padding="@dimen/padding_5dp" />
+
+            <!-- 第三方登录 -->
+            <LinearLayout
+                android:id="@+id/custom_third_part_layout"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/third_part_login"
+                    android:visibility="gone"
+                    android:layout_marginTop="@dimen/login_fragment_third_part_layout_margin_top" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/login_fragment_third_part_btn_margin_top"
+                    android:gravity="center">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icloud_image_oval_mask_selector"
+                        android:background="@drawable/cloud_ic_facebook"
+                        android:id="@+id/custom_facebook_btn"
+                        android:layout_marginStart="@dimen/login_fragment_third_part_btn_padding"
+                        android:layout_marginLeft="@dimen/login_fragment_third_part_btn_padding"
+                        android:layout_marginEnd="@dimen/login_fragment_third_part_btn_padding"
+                        android:layout_marginRight="@dimen/login_fragment_third_part_btn_padding"/>
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icloud_image_oval_mask_selector"
+                        android:background="@drawable/cloud_ic_google"
+                        android:id="@+id/custom_google_btn"
+                        android:layout_marginStart="@dimen/login_fragment_third_part_btn_padding"
+                        android:layout_marginLeft="@dimen/login_fragment_third_part_btn_padding"
+                        android:layout_marginEnd="@dimen/login_fragment_third_part_btn_padding"
+                        android:layout_marginRight="@dimen/login_fragment_third_part_btn_padding"/>
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icloud_image_oval_mask_selector"
+                        android:background="@drawable/cloud_ic_twitter"
+                        android:id="@+id/custom_twitter_btn"
+                        android:layout_marginStart="@dimen/login_fragment_third_part_btn_padding"
+                        android:layout_marginLeft="@dimen/login_fragment_third_part_btn_padding"
+                        android:layout_marginEnd="@dimen/login_fragment_third_part_btn_padding"
+                        android:layout_marginRight="@dimen/login_fragment_third_part_btn_padding"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/custom_toggle_login_way_layout"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="3dp"
+                android:layout_gravity="center"
+                android:gravity="bottom">
+
+                <TextView
+                    android:text="@string/toggle_login_way"
+                    android:textColor="@color/icloud_1aaa70"
+                    android:textSize="@dimen/textsize_14dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/custom_toggle_login_btn"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:paddingTop="@dimen/padding_5dp"
+                    android:visibility="gone"
+                    android:paddingBottom="@dimen/padding_5dp"/>
+
+                <TextView
+                    android:text="@string/find_password"
+                    android:textColor="@color/icloud_1aaa70"
+                    android:textSize="@dimen/textsize_14dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/custom_find_pwd_btn"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:paddingTop="@dimen/padding_5dp"
+                    android:paddingBottom="@dimen/padding_5dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

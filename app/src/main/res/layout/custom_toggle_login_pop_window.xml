@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/custom_out">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/color_black_tran90" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/custom_choose_login_way"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pop_window_title_height"
+                android:gravity="center_vertical"
+                android:text="@string/text_choose_login_way"
+                android:paddingLeft="@dimen/padding_16dp"
+                android:paddingStart="@dimen/padding_16dp"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/pop_window_title_textsize" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/custom_toggle_phone_login_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/custom_toggle_phone_login"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pop_window_listitem_height"
+                android:gravity="center_vertical"
+                android:text="@string/text_phone_login"
+                android:paddingLeft="@dimen/padding_16dp"
+                android:paddingStart="@dimen/padding_16dp"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/pop_window_listitem_textsize"
+                android:background="@drawable/list_bg_selector"/>
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/color_e3e5e9"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/custom_toggle_email_login_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/custom_toggle_email_login"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pop_window_listitem_height"
+                android:gravity="center_vertical"
+                android:text="@string/text_email_login"
+                android:paddingLeft="@dimen/padding_16dp"
+                android:paddingStart="@dimen/padding_16dp"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/pop_window_listitem_textsize"
+                android:background="@drawable/list_bg_selector"/>
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/color_e3e5e9"
+                />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/custom_toggle_sms_code_login_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/custom_toggle_sms_code_login"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pop_window_listitem_height"
+                android:gravity="center_vertical"
+                android:text="@string/text_sms_code_login"
+                android:paddingLeft="@dimen/padding_16dp"
+                android:paddingStart="@dimen/padding_16dp"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/pop_window_listitem_textsize"
+                android:background="@drawable/list_bg_selector"/>
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/color_e3e5e9"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/custom_toggle_hiaccount_login_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/custom_toggle_hiaccount_login"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pop_window_listitem_height"
+                android:gravity="center_vertical"
+                android:text="@string/login_via_hiAccount"
+                android:paddingLeft="@dimen/padding_16dp"
+                android:paddingStart="@dimen/padding_16dp"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/pop_window_listitem_textsize"
+                android:background="@drawable/list_bg_selector"/>
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/color_e3e5e9"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/custom_toggle_tudcauthorize_login_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/custom_toggle_tudcauthorize_login"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pop_window_listitem_height"
+                android:gravity="center_vertical"
+                android:text="login by tudc authorize"
+                android:paddingLeft="@dimen/padding_16dp"
+                android:paddingStart="@dimen/padding_16dp"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/pop_window_listitem_textsize"
+                android:background="@drawable/list_bg_selector"/>
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/color_e3e5e9"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

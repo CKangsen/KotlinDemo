@@ -1,0 +1,58 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.threetree.contactbackup"
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        ndk {
+            // 设置支持的SO库架构
+            // abiFilters 'armeabi' //, 'armeabi-v7a', 'x86', 'x86_64', 'arm64-v8a'
+            abiFilters 'armeabi' , 'armeabi-v7a',  'arm64-v8a'
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled true
+            matchingFallbacks = ['debug']
+        }
+    }
+
+}
+
+
+
+
+dependencies {
+    implementation fileTree(dir: 'libs',include: ['*.jar'])
+    implementation(name: 'cusv_tudcsdk-release_1.0.8', ext: 'aar')
+    implementation"org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    // Because RxAndroid releases are few and far between, it is recommended you also
+    // explicitly depend on RxJava's latest version for bug fixes and new features.
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.7'
+
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+
+    implementation 'org.greenrobot:greendao:3.2.2'
+    implementation 'org.greenrobot:greendao-generator:3.2.2'
+
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'org.greenrobot:eventbus:3.1.1'
+}
